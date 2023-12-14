@@ -1,0 +1,92 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-size: 36px;
+  margin-top:25px;
+  color: #fff;
+  background-color: blue;
+  display: grid;
+  place-content: center;
+}
+
+table,
+td,
+tr,
+th {
+  padding: 10px;
+}
+
+th {
+  color: yellow;
+  text-align: left;
+}
+
+h1 {
+  color: orange;
+}
+
+a {
+  color: white;
+}
+
+.myButton {
+  background-color: #5edfff;
+  color: black;
+  border: 5px solid #0088cc;
+  border-radius: 15px;
+  padding: 10px;
+  width: 200px;
+  text-align: center !important;
+  align-content: center;
+}
+
+.myButton:hover {
+  background-color: blue;
+  color: white;
+  cursor: pointer;
+}
+
+.submitButton {
+  background-color: yellow;
+  color: black;
+  border: 5px solid #0088cc;
+  border-radius: 15px;
+  padding: 10px;
+  width: 100px;
+  text-align: center !important;
+  align-content: center;
+}
+
+.submitButton:hover {
+  background-color: blue;
+  color: white;
+  cursor: pointer;
+}
+
+.deleteButton {
+  background-color: red;
+  color: white;
+  border: 5px solid #0088cc;
+  border-radius: 15px;
+  padding: 10px;
+  width: 100px;
+  text-align: center !important;
+  align-content: center;
+}
+
+.deleteButton:hover {
+  background-color: darkred;
+  color: white;
+  cursor: pointer;
+}
+
+input[type=text]
+{
+   height: 40px; 
+   line-height: 40px;
+   width:200px;
+}

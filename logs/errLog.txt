@@ -1,0 +1,68 @@
+11-16-2023	11:13:13 	 aa9d38cc-9061-4c2d-985c-80fab31fa911 	 Error Cannot set headers after they are sent to the client 
+11-16-2023	11:16:51 	 b057ff42-7171-4fac-8bf3-19fe996a7bb3 	 TypeError path must be a string to res.sendFile 
+11-16-2023	11:28:59 	 2e43b6e0-6ccc-4caa-bd31-d0a699479d47 	 Error Cannot set headers after they are sent to the client 
+11-16-2023	11:30:16 	 210bfe8e-d859-4df4-95fb-8f43081e3740 	 Error Cannot set headers after they are sent to the client 
+11-16-2023	11:30:22 	 2539d7d8-5635-4e9b-b788-c830ad832c21 	 Error Cannot set headers after they are sent to the client 
+11-16-2023	11:37:36 	 cc198ad7-8e9a-4a6d-a2bd-c806cbb5af81 	 Error Cannot set headers after they are sent to the client 
+11-16-2023	11:38:34 	 17ab1f9e-c4df-4917-b12f-50a1d03232cb 	 Error Cannot set headers after they are sent to the client 
+11-16-2023	11:54:32 	 3323a1a4-997b-4472-ac29-67dbd6fb9f54 	 Error Cannot set headers after they are sent to the client 
+11-16-2023	11:55:14 	 68dba5df-4cfd-4bdb-adfe-abb37a6923d2 	 Error Cannot set headers after they are sent to the client 
+11-16-2023	11:58:21 	 96451cb0-d54f-4a69-bc53-f9dd43fe8df1 	 TypeError alert is not a function 
+11-17-2023	12:09:19 	 8e5269a7-38cb-49af-9eab-7f4edecd33af 	 Error Cannot set headers after they are sent to the client 
+11-17-2023	12:10:04 	 77303810-6761-40ea-a8c3-b0b0b65afc60 	 Error Cannot set headers after they are sent to the client 
+11-17-2023	12:10:26 	 c6fa0fbc-338b-419c-b68d-39cb61d8ae62 	 Error Cannot set headers after they are sent to the client 
+11-17-2023	12:12:30 	 2993be10-8fda-460d-91f7-6c47cc4a4e41 	 Error Cannot set headers after they are sent to the client 
+11-17-2023	12:33:31 	 dade8974-8a98-4b8e-a1a1-1cd915b502ad 	 Error Cannot set headers after they are sent to the client 
+11-17-2023	12:34:06 	 3b261189-eb99-4610-8567-c844c07d5485 	 Error Cannot set headers after they are sent to the client 
+11-17-2023	12:34:44 	 2c073147-5797-44e3-8619-b2adf13e2c18 	 TypeError path must be a string to res.sendFile 
+11-17-2023	12:35:12 	 2460bfa7-5be5-4b78-9f16-6a8299b7715b 	 TypeError path must be a string to res.sendFile 
+11-17-2023	12:35:46 	 118f80e9-9599-41e9-b623-24d1ba97940f 	 Error Cannot set headers after they are sent to the client 
+11-17-2023	12:48:26 	 90eb92c8-4469-4b31-98af-795376a4585d 	 Error Cannot set headers after they are sent to the client 
+11-17-2023	12:48:44 	 a5c44924-f3b6-463c-ab4a-90dd4532df20 	 Error Cannot set headers after they are sent to the client 
+11-19-2023	09:31:02 	 33641565-6e86-4463-a196-ca505abfd75b 	 TypeError path must be a string to res.sendFile 
+11-19-2023	09:32:12 	 9334fd83-5677-411e-8b32-0fcde4671971 	 TypeError path must be a string to res.sendFile 
+11-19-2023	09:32:26 	 0113ed33-b816-49bb-935a-ef2a28ff2872 	 TypeError path must be a string to res.sendFile 
+11-19-2023	09:32:32 	 69e140a6-dae9-44e2-899f-e32e009184a1 	 TypeError path must be a string to res.sendFile 
+11-19-2023	09:36:48 	 79fddd8c-0b83-47ca-98c3-14216366306a 	 TypeError path must be a string to res.sendFile 
+11-19-2023	09:37:03 	 2084f837-f4b9-4a3a-b617-c047825a7723 	 TypeError path must be a string to res.sendFile 
+11-19-2023	09:41:43 	 68a3184a-ecf1-4023-ada8-3404122618b7 	 TypeError phone.match is not a function 
+11-19-2023	09:42:23 	 b4b4f153-c75f-4252-9968-8d15e550e432 	 TypeError phone.match is not a function 
+11-22-2023	07:36:17 	 2e1278ff-f743-4b1c-91f4-5936009ef335 	 TypeError Cannot read properties of undefined (reading 'match') 
+11-22-2023	07:37:09 	 1eddefdf-e92f-4f7e-bf35-bc55f259d152 	 TypeError Cannot read properties of undefined (reading 'match') 
+11-22-2023	07:39:04 	 ce691640-70db-4dc4-9c6c-8991634bb5e6 	 TypeError Cannot read properties of undefined (reading 'match') 
+11-22-2023	07:40:18 	 867126b4-3683-448e-8e37-0fd419ccca76 	 TypeError Cannot read properties of undefined (reading 'match') 
+11-22-2023	07:42:23 	 0eeb574a-a9a7-44d3-9de5-99dcceb80d8b 	 TypeError Cannot read properties of undefined (reading 'match') 
+11-22-2023	07:43:28 	 2d168537-86be-4240-a5b7-e86b2339685e 	 TypeError Cannot read properties of undefined (reading 'match') 
+11-22-2023	07:46:34 	 2e2fd993-315d-4732-bce5-caa1f14420a5 	 TypeError Cannot read properties of undefined (reading 'match') 
+12-14-2023	04:20:25 	 a8372b58-af4f-4399-99c0-633afb73e00c 	 TypeError path must be a string to res.sendFile 
+12-14-2023	04:21:12 	 9ff6babb-7c9c-40a1-8224-740d696f9c2c 	 TypeError path must be a string to res.sendFile 
+12-14-2023	04:21:38 	 4d8e8a35-11a7-4252-af4c-0dd9f118a059 	 TypeError path must be a string to res.sendFile 
+12-14-2023	04:21:39 	 fea907de-474a-49b2-97e3-489008f6cebc 	 TypeError path must be a string to res.sendFile 
+12-14-2023	04:21:42 	 cc5f34c0-9a63-47a1-81a2-8a42e7a2da57 	 TypeError path must be a string to res.sendFile 
+12-14-2023	04:22:05 	 5138861c-8a29-4954-a358-b29aa494209e 	 TypeError path must be a string to res.sendFile 
+12-14-2023	04:22:22 	 fb92d6fc-5b7b-4d54-8e81-6b7a5242eee3 	 TypeError path must be a string to res.sendFile 
+12-14-2023	04:22:24 	 321e5af2-6eb4-4bda-a61e-9893cfb2093e 	 TypeError path must be a string to res.sendFile 
+12-14-2023	04:22:40 	 ce8a9c7f-357d-4467-8faa-a794f602fd0f 	 TypeError path must be a string to res.sendFile 
+12-14-2023	04:22:46 	 92aa08c9-2a1e-4a3b-91fe-1a4bd95ea4d5 	 TypeError path must be a string to res.sendFile 
+12-14-2023	04:47:34 	 49ee4770-4784-4503-8155-4c835a5cc89f 	 TypeError path must be a string to res.sendFile 
+12-14-2023	04:47:58 	 d01a3117-5594-4710-bafb-ea5f1d79625a 	 TypeError path must be a string to res.sendFile 
+12-14-2023	04:48:12 	 207f3c29-19e2-4482-a9a2-ac0a25c46e00 	 TypeError path must be a string to res.sendFile 
+12-14-2023	04:48:40 	 e9ab1bdd-e368-4fb6-a41d-85eeb1fa088d 	 TypeError path must be a string to res.sendFile 
+12-14-2023	04:48:43 	 b744f235-01ff-4923-a61f-4a8cc8dca7b1 	 TypeError path must be a string to res.sendFile 
+12-14-2023	04:48:52 	 d97e1cc4-4688-4473-86a6-6d34ef4982a9 	 TypeError path must be a string to res.sendFile 
+12-14-2023	04:48:54 	 b016dcfd-36fa-4380-a238-2a5cb70315fd 	 TypeError path must be a string to res.sendFile 
+12-14-2023	04:49:20 	 6f18a91f-0a15-4855-ad26-9ed158bf548e 	 TypeError path must be a string to res.sendFile 
+12-14-2023	04:49:25 	 ccbdc0c6-e031-43a0-a659-a03fc2697073 	 TypeError path must be a string to res.sendFile 
+12-14-2023	04:49:27 	 c711f5d5-a232-4793-96c3-a636335f8b2c 	 TypeError path must be a string to res.sendFile 
+12-14-2023	04:49:35 	 2796380d-d642-4ac9-b673-c0b238cf1585 	 TypeError path must be a string to res.sendFile 
+12-14-2023	04:49:38 	 7a4a0afe-1a80-4b01-9905-9e8027e1271b 	 TypeError path must be a string to res.sendFile 
+12-14-2023	05:07:50 	 e5761d5f-4a40-4a69-9f37-e915d153fc18 	 TypeError path must be a string to res.sendFile 
+12-14-2023	05:08:08 	 004deac4-d40c-4ca1-9db0-d10907a66590 	 TypeError path must be a string to res.sendFile 
+12-14-2023	05:08:11 	 cf350aa7-7b22-49e8-b524-97bec73cb877 	 TypeError path must be a string to res.sendFile 
+12-14-2023	05:08:12 	 a7fcab27-1d77-4494-a286-7d2a379c43f7 	 TypeError path must be a string to res.sendFile 
+12-14-2023	05:08:18 	 e03195fc-4992-43d6-a22d-bad83a707a89 	 TypeError path must be a string to res.sendFile 
+12-14-2023	05:08:20 	 88dea689-98fe-4016-9403-793cb6e1a33f 	 TypeError path must be a string to res.sendFile 
+12-14-2023	05:08:26 	 80c520be-5862-4fb4-8b45-9213d89ee996 	 TypeError path must be a string to res.sendFile 
+12-14-2023	05:08:28 	 597166b2-c1de-4984-8d93-3a555f899fbb 	 TypeError path must be a string to res.sendFile 
+12-14-2023	05:08:34 	 98370f96-8dad-440b-bdf9-8b0b403fb317 	 TypeError path must be a string to res.sendFile 
+12-14-2023	05:09:00 	 17029914-d0b7-4594-bae4-fdc30a183cbf 	 TypeError path must be a string to res.sendFile 
