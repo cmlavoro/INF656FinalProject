@@ -1,0 +1,12 @@
+{
+  "version": 1,
+  "paths": {
+    "/items": {
+      "name": "/items",
+      "lambdaFunction": "inf656finalproject1b46327d",
+      "permissions": {
+        "setting": "open"
+      }
+    }
+  }
+}

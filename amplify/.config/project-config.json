@@ -11,7 +11,7 @@
       "SourceDir": "src",
       "DistributionDir": "dist",
       "BuildCommand": "npm run-script build",
-      "StartCommand": "nodemon .\\server.js"
+      "StartCommand": "npm run-script start"
     }
   }
 }
