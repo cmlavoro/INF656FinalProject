@@ -1,92 +1,53 @@
-/*
-Copyright 2017 - 2017 Amazon.com, Inc. or its affiliates. All Rights Reserved.
-Licensed under the Apache License, Version 2.0 (the "License"). You may not use this file except in compliance with the License. A copy of the License is located at
-    http://aws.amazon.com/apache2.0/
-or in the "license" file accompanying this file. This file is distributed on an "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
-See the License for the specific language governing permissions and limitations under the License.
-*/
+require("dotenv").config();
+const express = require("express");
+const methodOverride = require("method-override");
+const app = express();
+const path = require("path");
+const cors = require("cors");
+const corsOptions = require("./config/corsOptions");
+const { logger } = require("./middleware/logEvents");
+const errorHandler = require("./middleware/errorHandler");
+const connectDB = require("./config/dbConfig");
+const mongoose = require("mongoose");
+const PORT = process.env.PORT || 3000;
 
+// ConnectDB
+connectDB();
 
+// Custom Middleware Function
+app.use(logger);
+app.use(cors(corsOptions));
+app.use(methodOverride("_method"));
 
+// Built in middleware functions in express
+app.use(express.urlencoded({ extended: false }));
+app.use(express.json());
 
-const express = require('express')
-const bodyParser = require('body-parser')
-const awsServerlessExpressMiddleware = require('aws-serverless-express/middleware')
+//serves static assets such as HTML files, images, and so on
+app.use(express.static(path.join(__dirname, "/public")));
+app.use("/subdir", express.static(path.join(__dirname, "/public")));
 
-// declare a new express app
-const app = express()
-app.use(bodyParser.json())
-app.use(awsServerlessExpressMiddleware.eventContext())
+//routes
+app.use("/subdir", require("./routes/subdir"));
+app.use("/", require("./routes/root"));
+//API Route
+app.use("/contact", require("./routes/api/contacts"));
 
-// Enable CORS for all methods
-app.use(function(req, res, next) {
-  res.header("Access-Control-Allow-Origin", "*")
-  res.header("Access-Control-Allow-Headers", "*")
-  next()
+//Handle undefined routes
+app.all("*", (req, res) => {
+  res.status(404);
+  if (req.accepts("html")) {
+    res.sendFile(path.join)(__dirname, "views", "404.html");
+  } else if (req.accepts("json")) {
+    res.json({ error: "404 Not Found" });
+  } else {
+    res.type("txt").send("404 Not Found");
+  }
 });
 
+app.use(errorHandler);
 
-/**********************
- * Example get method *
- **********************/
-
-app.get('/items', function(req, res) {
-  // Add your code here
-  res.json({success: 'get call succeed!', url: req.url});
+mongoose.connection.once("open", () => {
+  console.log("Connected to mongoDB");
+  app.listen(PORT, () => console.log(`Server is running on ${PORT}`));
 });
-
-app.get('/items/*', function(req, res) {
-  // Add your code here
-  res.json({success: 'get call succeed!', url: req.url});
-});
-
-/****************************
-* Example post method *
-****************************/
-
-app.post('/items', function(req, res) {
-  // Add your code here
-  res.json({success: 'post call succeed!', url: req.url, body: req.body})
-});
-
-app.post('/items/*', function(req, res) {
-  // Add your code here
-  res.json({success: 'post call succeed!', url: req.url, body: req.body})
-});
-
-/****************************
-* Example put method *
-****************************/
-
-app.put('/items', function(req, res) {
-  // Add your code here
-  res.json({success: 'put call succeed!', url: req.url, body: req.body})
-});
-
-app.put('/items/*', function(req, res) {
-  // Add your code here
-  res.json({success: 'put call succeed!', url: req.url, body: req.body})
-});
-
-/****************************
-* Example delete method *
-****************************/
-
-app.delete('/items', function(req, res) {
-  // Add your code here
-  res.json({success: 'delete call succeed!', url: req.url});
-});
-
-app.delete('/items/*', function(req, res) {
-  // Add your code here
-  res.json({success: 'delete call succeed!', url: req.url});
-});
-
-app.listen(3000, function() {
-    console.log("App started")
-});
-
-// Export the app object. When executing the application local this does nothing. However,
-// to port it to AWS Lambda we will create a wrapper around that will load the app from
-// this file
-module.exports = app
