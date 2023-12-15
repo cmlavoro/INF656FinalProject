@@ -7,7 +7,6 @@ See the License for the specific language governing permissions and limitations 
 */
 
 const express = require("express");
-const methodOverride = require("method-override");
 const bodyParser = require("body-parser");
 const awsServerlessExpressMiddleware = require("aws-serverless-express/middleware");
 
@@ -17,7 +16,6 @@ const path = require("path");
 app.use(bodyParser.json());
 app.use(awsServerlessExpressMiddleware.eventContext());
 
-app.use(methodOverride("_method"));
 
 const connectDB = require("./config/dbConfig");
 const mongoose = require("mongoose");
