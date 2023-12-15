@@ -51,26 +51,18 @@ app.get("/comedy", async (req, res) => {
   res.json(contacts);
 });
 
-app.get("/comedy/*", function (req, res) {
-  // Add your code here
-  res.json({
-    success: "get call succeed even with additional characters!",
-    url: req.url,
-  });
-});
-
 /****************************
  * Example post method *
  ****************************/
-
-app.post("/comedy", function (req, res) {
-  // Add your code here
-  res.json({ success: "post call succeed!", url: req.url, body: req.body });
-});
-
-app.post("/comedy/*", function (req, res) {
-  // Add your code here
-  res.json({ success: "post call succeed!", url: req.url, body: req.body });
+app.post("/comedy", async function (req, res) {
+  const result = await Contact.create ({
+    FirstName: req.body.FirstName,
+    LastName: req.body.LastName,
+    Phone: req.body.Phone,
+    Email: req.body.Email,
+    Address: req.body.Address,
+  });
+  res.redirect("/?s=0");
 });
 
 /****************************
