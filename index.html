@@ -5,7 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Jokes</title>
-    <link rel="stylesheet" href="../css/style.css" />
+    <link rel="stylesheet" href="./css/style.css" />
   </head>
   <body>
     <div>
@@ -22,8 +22,26 @@
       <div id="dvContacts"></div>
       <script type="text/javascript">
         let url = "https://cpa94jmim7.execute-api.us-east-1.amazonaws.com/dev/comedy";
-
-        fetch(url).then(response => {return response.json();}).then(comedy => {console.log(comedy);});
+        fetchData(url);
+        function fetchData(url) {
+          fetch(url)
+            .then((res) => res.json())
+            .then((data) => {
+              document.getElementById("dvContacts").innerHTML =
+                createTable(data);
+            })
+            .catch((err) => {
+              fetchData(url);
+            });
+        }
+        function createTable(data) {
+          let table = "<table style='margin-left:auto;margin-right:auto'>";
+          data.forEach((item) => {
+            table += `<tr><td><a href='/updatecontact/${item._id}'><span style='color:yellow'>${item.LastName.substring(0,1)}</span>${item.LastName.substring(1, item.LastName.length)}<span style='font-size:small'>, ${item.FirstName}<span></a></td></tr>`;
+          });
+          table += "</table>";
+          return table;
+        }
       </script>
     </div>
   </body>
