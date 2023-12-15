@@ -47,12 +47,12 @@
         "FunctionName": {
           "Fn::If": [
             "ShouldNotCreateEnvResources",
-            "inf656finalproject1b46327d",
+            "inf656finalproject731f5c96",
             {
               "Fn::Join": [
                 "",
                 [
-                  "inf656finalproject1b46327d",
+                  "inf656finalproject731f5c96",
                   "-",
                   {
                     "Ref": "env"
@@ -89,12 +89,12 @@
         "RoleName": {
           "Fn::If": [
             "ShouldNotCreateEnvResources",
-            "inf656finalprojectLambdaRole5c68bf09",
+            "inf656finalprojectLambdaRole25106597",
             {
               "Fn::Join": [
                 "",
                 [
-                  "inf656finalprojectLambdaRole5c68bf09",
+                  "inf656finalprojectLambdaRole25106597",
                   "-",
                   {
                     "Ref": "env"

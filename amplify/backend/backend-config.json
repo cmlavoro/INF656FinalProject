@@ -1,6 +1,6 @@
 {
   "api": {
-    "api562490a2": {
+    "api8f1aa96a": {
       "dependsOn": [
         {
           "attributes": [
@@ -8,7 +8,21 @@
             "Arn"
           ],
           "category": "function",
-          "resourceName": "inf656finalproject1b46327d"
+          "resourceName": "inf656finalproject731f5c96"
+        }
+      ],
+      "providerPlugin": "awscloudformation",
+      "service": "API Gateway"
+    },
+    "comedyapi": {
+      "dependsOn": [
+        {
+          "attributes": [
+            "Name",
+            "Arn"
+          ],
+          "category": "function",
+          "resourceName": "comedyfunction"
         }
       ],
       "providerPlugin": "awscloudformation",
@@ -16,26 +30,47 @@
     }
   },
   "function": {
-    "inf656finalproject1b46327d": {
+    "comedyfunction": {
+      "build": true,
+      "providerPlugin": "awscloudformation",
+      "service": "Lambda"
+    },
+    "inf656finalproject731f5c96": {
       "build": true,
       "providerPlugin": "awscloudformation",
       "service": "Lambda"
     }
   },
   "parameters": {
-    "AMPLIFY_function_inf656finalproject1b46327d_deploymentBucketName": {
+    "AMPLIFY_function_comedyfunction_deploymentBucketName": {
       "usedBy": [
         {
           "category": "function",
-          "resourceName": "inf656finalproject1b46327d"
+          "resourceName": "comedyfunction"
         }
       ]
     },
-    "AMPLIFY_function_inf656finalproject1b46327d_s3Key": {
+    "AMPLIFY_function_comedyfunction_s3Key": {
       "usedBy": [
         {
           "category": "function",
-          "resourceName": "inf656finalproject1b46327d"
+          "resourceName": "comedyfunction"
+        }
+      ]
+    },
+    "AMPLIFY_function_inf656finalproject731f5c96_deploymentBucketName": {
+      "usedBy": [
+        {
+          "category": "function",
+          "resourceName": "inf656finalproject731f5c96"
+        }
+      ]
+    },
+    "AMPLIFY_function_inf656finalproject731f5c96_s3Key": {
+      "usedBy": [
+        {
+          "category": "function",
+          "resourceName": "inf656finalproject731f5c96"
         }
       ]
     }

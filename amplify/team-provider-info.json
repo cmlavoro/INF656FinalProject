@@ -1,25 +1,30 @@
 {
-  "staging": {
+  "dev": {
     "awscloudformation": {
-      "AuthRoleName": "amplify-amplify13b3a48d049c4-staging-221138-authRole",
-      "UnauthRoleArn": "arn:aws:iam::974717325564:role/amplify-amplify13b3a48d049c4-staging-221138-unauthRole",
-      "AuthRoleArn": "arn:aws:iam::974717325564:role/amplify-amplify13b3a48d049c4-staging-221138-authRole",
-      "Region": "us-east-2",
-      "DeploymentBucketName": "amplify-amplify13b3a48d049c4-staging-221138-deployment",
-      "UnauthRoleName": "amplify-amplify13b3a48d049c4-staging-221138-unauthRole",
-      "StackName": "amplify-amplify13b3a48d049c4-staging-221138",
-      "StackId": "arn:aws:cloudformation:us-east-2:974717325564:stack/amplify-amplify13b3a48d049c4-staging-221138/c0a31330-9acd-11ee-8b7e-06b0f3c75cbd",
-      "AmplifyAppId": "d16x3srmd26ptr"
+      "AuthRoleName": "amplify-inf656finalproject-dev-212517-authRole",
+      "UnauthRoleArn": "arn:aws:iam::974717325564:role/amplify-inf656finalproject-dev-212517-unauthRole",
+      "AuthRoleArn": "arn:aws:iam::974717325564:role/amplify-inf656finalproject-dev-212517-authRole",
+      "Region": "us-east-1",
+      "DeploymentBucketName": "amplify-inf656finalproject-dev-212517-deployment",
+      "UnauthRoleName": "amplify-inf656finalproject-dev-212517-unauthRole",
+      "StackName": "amplify-inf656finalproject-dev-212517",
+      "StackId": "arn:aws:cloudformation:us-east-1:974717325564:stack/amplify-inf656finalproject-dev-212517/303c5440-9af1-11ee-9dd8-0a06219d2b51",
+      "AmplifyAppId": "d3b8t4wh48uh6w"
     },
     "categories": {
       "function": {
-        "inf656finalproject1b46327d": {
-          "deploymentBucketName": "amplify-amplify13b3a48d049c4-staging-221138-deployment",
-          "s3Key": "amplify-builds/inf656finalproject1b46327d-594d5967503446486a6f-build.zip"
+        "comedyfunction": {
+          "deploymentBucketName": "amplify-inf656finalproject-dev-212517-deployment",
+          "s3Key": "amplify-builds/comedyfunction-38382b3579773372492f-build.zip"
+        },
+        "inf656finalproject731f5c96": {
+          "deploymentBucketName": "amplify-inf656finalproject-dev-212517-deployment",
+          "s3Key": "amplify-builds/inf656finalproject731f5c96-5833514a584471457755-build.zip"
         }
       },
       "api": {
-        "api562490a2": {}
+        "comedyapi": {},
+        "api8f1aa96a": {}
       }
     }
   }

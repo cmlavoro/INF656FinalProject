@@ -1,0 +1,12 @@
+{
+  "version": 1,
+  "paths": {
+    "/jokes": {
+      "name": "/jokes",
+      "lambdaFunction": "comedyfunction",
+      "permissions": {
+        "setting": "open"
+      }
+    }
+  }
+}

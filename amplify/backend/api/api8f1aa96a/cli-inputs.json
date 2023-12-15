@@ -1,9 +1,9 @@
 {
   "version": 1,
   "paths": {
-    "/items": {
-      "name": "/items",
-      "lambdaFunction": "inf656finalproject1b46327d",
+    "/comedy": {
+      "name": "/comedy",
+      "lambdaFunction": "inf656finalproject731f5c96",
       "permissions": {
         "setting": "open"
       }
