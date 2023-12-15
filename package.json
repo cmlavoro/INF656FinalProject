@@ -2,9 +2,6 @@
   "name": "log-events",
   "version": "1.0.0",
   "description": "Assignment 3 - Contact Directory",
-  "scripts": {
-    "start": "nodemon server.js"
-  },
   "author": "Chris Lavoro",
   "license": "ISC",
   "dependencies": {

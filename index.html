@@ -1,1 +1,30 @@
-test
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Jokes</title>
+    <link rel="stylesheet" href="../css/style.css" />
+  </head>
+  <body>
+    <div>
+      <h1 style="text-align: center">Jokes</h1>
+      <div style="text-align: center">
+        <button class="myButton" onclick="location.href='newcontact'">
+          Add New Joke
+        </button>
+      </div>
+      <div
+        id="dvSaveResult"
+        style="text-align: center; font-size: medium; color: lime"
+      ></div>
+      <div id="dvContacts"></div>
+      <script type="text/javascript">
+        let url = "https://cpa94jmim7.execute-api.us-east-1.amazonaws.com/dev/comedy";
+
+        fetch(url).then(response => {return response.json();}).then(comedy => {console.log(comedy);});
+      </script>
+    </div>
+  </body>
+</html>

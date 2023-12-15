@@ -11,5 +11,7 @@
   },
   "devDependencies": {
     "@types/aws-lambda": "^8.10.92"
+  },"scripts": {
+    "start": "nodemon app.js"
   }
 }
