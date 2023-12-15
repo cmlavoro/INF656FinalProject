@@ -95,11 +95,6 @@ app.delete("/comedy/*", function (req, res) {
   res.json({ success: "delete call succeed!", url: req.url });
 });
 
-// mongoose.connection.once("open", () => {
-//   console.log("Connected to mongoDB");
-//   app.listen(PORT, () => console.log(`Server is running on ${PORT}`));
-// });
-
 app.listen(3000, function () {
   console.log("App started");
 });
