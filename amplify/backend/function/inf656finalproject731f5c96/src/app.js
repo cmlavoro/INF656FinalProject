@@ -33,6 +33,10 @@ app.use(function (req, res, next) {
 app.use(express.static(path.join(__dirname, "./public")));
 app.use("/subdir", express.static(path.join(__dirname, "./public")));
 
+app.get("/newcontact", (req, res) => {
+  res.sendFile(path.join(__dirname, "newcontact.html"));
+});
+
 const Contact = require("./model/Contact");
 /**********************
  * Example get method *
