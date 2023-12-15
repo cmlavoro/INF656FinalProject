@@ -10,8 +10,8 @@ router.get("^/$|/index(.html)?", (req, res) => {
   res.sendFile(path.join(__dirname, "..", "index.html"));
 });
 
-router.get("/newcontact", (req, res) => {
-  res.sendFile(path.join(__dirname, "..", "views", "newcontact.html"));
+router.get("/newjoke", (req, res) => {
+  res.sendFile(path.join(__dirname, "..", "views", "newjoke.html"));
 });
 
 router.get("/nameinvalid", (req, res) => {

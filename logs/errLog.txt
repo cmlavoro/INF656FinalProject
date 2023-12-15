@@ -114,3 +114,6 @@
 12-15-2023	01:50:37 	 b29f800e-2e69-4411-902e-7c7f9b925290 	 TypeError path must be a string to res.sendFile 
 12-15-2023	01:50:51 	 9aa30529-375d-49c9-b4fa-ad6b05d00ff0 	 TypeError path must be a string to res.sendFile 
 12-15-2023	01:52:27 	 a39b11a9-6c20-4f63-8fba-1f62f587a727 	 TypeError path must be a string to res.sendFile 
+12-15-2023	04:58:12 	 915a5332-92a1-4b52-93b1-861891a8792d 	 TypeError path must be a string to res.sendFile 
+12-15-2023	05:00:17 	 61b30179-53ee-404d-8fff-ef4af95100a5 	 TypeError path must be a string to res.sendFile 
+12-15-2023	05:20:21 	 0076bee8-ec45-446c-a5d4-2f0e6f7ed19d 	 Error ENOENT: no such file or directory, stat '/Users/chrislavoro/Dropbox/Chris/Computer Science/FHSU/INF656_BackendDevelopment2/INF656FinalProject/views/newjoke.html' 
