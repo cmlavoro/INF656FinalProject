@@ -29,6 +29,10 @@ app.use(function (req, res, next) {
   next();
 });
 
+//serves static assets such as HTML files, images, and so on
+app.use(express.static(path.join(__dirname, "./public")));
+app.use("/subdir", express.static(path.join(__dirname, "./public")));
+
 const Contact = require("./model/Contact");
 /**********************
  * Example get method *
