@@ -32,30 +32,56 @@ app.use(function (req, res, next) {
   next();
 });
 
+const HasAllData = (data) =>
+  data.FirstName != "" &&
+  data.LastName != "" &&
+  data.Phone != "" &&
+  data.Email != "";
+
+const NameFormat = (name) => name.match(/^[a-zA-Z .]*$/);
+
+const PhoneFormat = (phone) => phone.match(/^\d+$/);
+
+const EmailFormat = (email) =>
+  email.match(/^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/);
+
+const FormValid = (req, res) => {
+  if (!HasAllData(req)) return "First Name, Last Name, Phone, and Email are required!";
+  if (!NameFormat(req.FirstName)) return "First Name is invalid";
+  if (!NameFormat(req.LastName)) return "Last Name is invalid";
+  if (!PhoneFormat(req.Phone)) return "Phone is invalid. Use ########## only!";
+  if (!EmailFormat(req.Email)) return "Email is invalid.";
+
+  return true;
+};
+
 const Contact = require("./model/Contact");
 
 app
-.route("/comedy")
-.get(async (req, res) => {
-  const contacts = await Contact.find().sort({ LastName: 1 });
-  if (!contacts || contacts.length == 0) {
-    return res.status(400).json({ message: "No Contacts found." });
-  }
-  res.json(contacts);
-})
-.post(async function (req, res) {
-
-  var request = req;
-  const result = await Contact.create ({
-    FirstName: req.body.FirstName,
-    LastName: req.body.LastName,
-    Phone: req.body.Phone,
-    Email: req.body.Email,
-    Address: req.body.Address,
+  .route("/comedy")
+  .get(async (req, res) => {
+    const contacts = await Contact.find().sort({ LastName: 1 });
+    if (!contacts || contacts.length == 0) {
+      return res.status(400).json({ message: "No Contacts found." });
+    }
+    res.json(contacts);
+  })
+  .post(async function (req, res) {
+    const validationResult = FormValid(req.body);
+    if (validationResult != true) {
+      return res.status(400).json({ message: validationResult });
+    } else {
+      await Contact.create({
+        FirstName: req.body.FirstName,
+        LastName: req.body.LastName,
+        Phone: req.body.Phone,
+        Email: req.body.Email,
+        Address: req.body.Address,
+      });
+      const contacts = await Contact.find().sort({ LastName: 1 });
+      res.json(contacts);
+    }
   });
-  const contacts = await Contact.find().sort({ LastName: 1 });
-  res.json(contacts);
-});
 
 app.put("/comedy", function (req, res) {
   // Add your code here
