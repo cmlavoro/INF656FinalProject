@@ -13,17 +13,12 @@
     },
     "categories": {
       "function": {
-        "comedyfunction": {
-          "deploymentBucketName": "amplify-inf656finalproject-dev-212517-deployment",
-          "s3Key": "amplify-builds/comedyfunction-38382b3579773372492f-build.zip"
-        },
         "inf656finalproject731f5c96": {
           "deploymentBucketName": "amplify-inf656finalproject-dev-212517-deployment",
-          "s3Key": "amplify-builds/inf656finalproject731f5c96-5a544b7666554c614a4f-build.zip"
+          "s3Key": "amplify-builds/inf656finalproject731f5c96-66394338723070706563-build.zip"
         }
       },
       "api": {
-        "comedyapi": {},
         "api8f1aa96a": {}
       }
     }

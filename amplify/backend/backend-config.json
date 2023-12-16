@@ -13,28 +13,9 @@
       ],
       "providerPlugin": "awscloudformation",
       "service": "API Gateway"
-    },
-    "comedyapi": {
-      "dependsOn": [
-        {
-          "attributes": [
-            "Name",
-            "Arn"
-          ],
-          "category": "function",
-          "resourceName": "comedyfunction"
-        }
-      ],
-      "providerPlugin": "awscloudformation",
-      "service": "API Gateway"
     }
   },
   "function": {
-    "comedyfunction": {
-      "build": true,
-      "providerPlugin": "awscloudformation",
-      "service": "Lambda"
-    },
     "inf656finalproject731f5c96": {
       "build": true,
       "providerPlugin": "awscloudformation",
@@ -42,22 +23,6 @@
     }
   },
   "parameters": {
-    "AMPLIFY_function_comedyfunction_deploymentBucketName": {
-      "usedBy": [
-        {
-          "category": "function",
-          "resourceName": "comedyfunction"
-        }
-      ]
-    },
-    "AMPLIFY_function_comedyfunction_s3Key": {
-      "usedBy": [
-        {
-          "category": "function",
-          "resourceName": "comedyfunction"
-        }
-      ]
-    },
     "AMPLIFY_function_inf656finalproject731f5c96_deploymentBucketName": {
       "usedBy": [
         {
