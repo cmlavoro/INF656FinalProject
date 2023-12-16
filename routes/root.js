@@ -11,7 +11,7 @@ router.get("^/$|/index(.html)?", (req, res) => {
 });
 
 router.get("/newjoke", (req, res) => {
-  res.sendFile(path.join(__dirname, "..", "views", "newjoke.html"));
+  res.sendFile(path.join(__dirname, "..", "newjoke.html"));
 });
 
 router.get("/nameinvalid", (req, res) => {

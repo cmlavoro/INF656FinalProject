@@ -117,3 +117,28 @@
 12-15-2023	04:58:12 	 915a5332-92a1-4b52-93b1-861891a8792d 	 TypeError path must be a string to res.sendFile 
 12-15-2023	05:00:17 	 61b30179-53ee-404d-8fff-ef4af95100a5 	 TypeError path must be a string to res.sendFile 
 12-15-2023	05:20:21 	 0076bee8-ec45-446c-a5d4-2f0e6f7ed19d 	 Error ENOENT: no such file or directory, stat '/Users/chrislavoro/Dropbox/Chris/Computer Science/FHSU/INF656_BackendDevelopment2/INF656FinalProject/views/newjoke.html' 
+12-15-2023	06:54:29 	 1f4fd01e-70ae-4eee-8edf-7edd49ada5cd 	 TypeError path must be a string to res.sendFile 
+12-15-2023	06:54:32 	 54cbf3e6-0be0-4b67-84f2-6dadc3dc3e32 	 TypeError path must be a string to res.sendFile 
+12-15-2023	06:54:34 	 61abcc3a-b0da-4167-b6d0-12fc5bd468b4 	 TypeError path must be a string to res.sendFile 
+12-15-2023	06:54:48 	 e8e3fc91-849d-4130-966a-12e60ffa3766 	 TypeError path must be a string to res.sendFile 
+12-15-2023	06:55:09 	 d5ec3f9d-57d5-4577-bf77-a136547a6ca7 	 TypeError path must be a string to res.sendFile 
+12-15-2023	06:55:12 	 0a9e5674-aac9-4d38-be8c-843c53f1666a 	 TypeError path must be a string to res.sendFile 
+12-15-2023	06:56:35 	 4641c75c-362c-4e15-ab51-fb715ce151d6 	 TypeError path must be a string to res.sendFile 
+12-15-2023	06:57:15 	 f04861f4-e0b9-4eab-9ee4-f861d1bd144d 	 TypeError path must be a string to res.sendFile 
+12-15-2023	06:57:18 	 4dbb2a04-3911-416f-8caa-71fffd82c1ad 	 TypeError path must be a string to res.sendFile 
+12-15-2023	06:57:56 	 7df4cf43-4e06-4a64-85de-37f13bb738cc 	 TypeError path must be a string to res.sendFile 
+12-15-2023	06:59:40 	 686839d8-8d7b-4a77-bca2-5e6f503b7a3d 	 TypeError path must be a string to res.sendFile 
+12-15-2023	06:59:58 	 841cb30f-92a5-48fc-93ad-2b04e4c7e5d3 	 TypeError path must be a string to res.sendFile 
+12-15-2023	07:00:02 	 ba097f6c-ec34-4516-b346-15e2fc3f4545 	 TypeError path must be a string to res.sendFile 
+12-15-2023	07:00:17 	 840399d3-5f10-4f81-949f-21c0e2380e8b 	 TypeError path must be a string to res.sendFile 
+12-15-2023	07:00:50 	 7788393a-91ce-4c22-9634-641e54c50ef9 	 TypeError path must be a string to res.sendFile 
+12-15-2023	07:00:53 	 b1844812-e9ad-4579-890e-7f0502223029 	 TypeError path must be a string to res.sendFile 
+12-15-2023	07:01:16 	 8e88ebfa-6370-4556-813b-f5c5878c5afa 	 Error ENOENT: no such file or directory, stat '/Users/chrislavoro/Dropbox/Chris/Computer Science/FHSU/INF656_BackendDevelopment2/INF656FinalProject/indexz.html' 
+12-15-2023	07:01:17 	 a30d548d-c958-42ae-861f-32e6d27a8e60 	 Error ENOENT: no such file or directory, stat '/Users/chrislavoro/Dropbox/Chris/Computer Science/FHSU/INF656_BackendDevelopment2/INF656FinalProject/indexz.html' 
+12-15-2023	07:01:17 	 0ef6ce7d-7d18-4c19-818c-e360a186546a 	 TypeError path must be a string to res.sendFile 
+12-15-2023	07:01:30 	 e83548e1-46a4-4e1a-a11d-a3eaf6b734ac 	 Error ENOENT: no such file or directory, stat '/Users/chrislavoro/Dropbox/Chris/Computer Science/FHSU/INF656_BackendDevelopment2/INF656FinalProject/indexz.html' 
+12-15-2023	07:01:30 	 adeab8df-d865-4a43-8917-be42cf7ae8e8 	 TypeError path must be a string to res.sendFile 
+12-15-2023	07:01:31 	 3c86596e-c742-49b4-b155-b798f85750a2 	 Error ENOENT: no such file or directory, stat '/Users/chrislavoro/Dropbox/Chris/Computer Science/FHSU/INF656_BackendDevelopment2/INF656FinalProject/indexz.html' 
+12-15-2023	07:01:31 	 13cc0abe-9476-475f-ac04-92aea9b6459a 	 TypeError path must be a string to res.sendFile 
+12-15-2023	07:01:42 	 94930c48-a1a2-4419-9546-7a76e3dcfae4 	 TypeError path must be a string to res.sendFile 
+12-15-2023	07:11:19 	 3de254d9-97a0-494a-8d0c-0ceb5f9d6bfd 	 TypeError path must be a string to res.sendFile 
